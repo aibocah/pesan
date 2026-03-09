@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Menu Rumah Makan H. Imam</title>
+<title>Rumah Makan H. Imam</title>
 
 <style>
 
@@ -12,7 +12,7 @@ font-family:Arial;
 margin:0;
 background:#0b3d6e;
 color:white;
-padding-bottom:120px;
+padding-bottom:140px;
 }
 
 header{
@@ -59,7 +59,7 @@ right:0;
 background:white;
 color:black;
 padding:15px;
-box-shadow:0 -3px 10px rgba(0,0,0,0.2);
+box-shadow:0 -3px 10px rgba(0,0,0,0.3);
 }
 
 .cart-item{
@@ -91,44 +91,68 @@ font-size:16px;
 <header>RUMAH MAKAN H. IMAM</header>
 
 <div class="section">
+<h2>MENU KAMBING</h2>
+
+<div class="menu-item"><span>Sate kambing - 90.000</span><button onclick="addItem('Sate kambing',90000)">+</button></div>
+<div class="menu-item"><span>Tongseng kambing - 15.000</span><button onclick="addItem('Tongseng kambing',15000)">+</button></div>
+<div class="menu-item"><span>Gulai kambing - 15.000</span><button onclick="addItem('Gulai kambing',15000)">+</button></div>
+<div class="menu-item"><span>SOP kambing - 15.000</span><button onclick="addItem('SOP kambing',15000)">+</button></div>
+<div class="menu-item"><span>Gule kaki kambing - 20.000</span><button onclick="addItem('Gule kaki kambing',20000)">+</button></div>
+
+</div>
+
+
+<div class="section">
 <h2>MENU AYAM & LELE</h2>
 
-<div class="menu-item">
-<span>Ayam goreng - 10.000</span>
-<button onclick="addItem('Ayam goreng',10000)">+</button>
+<div class="menu-item"><span>Ayam goreng - 10.000</span><button onclick="addItem('Ayam goreng',10000)">+</button></div>
+<div class="menu-item"><span>Ayam bakar - 10.000</span><button onclick="addItem('Ayam bakar',10000)">+</button></div>
+<div class="menu-item"><span>Lele goreng - 9.000</span><button onclick="addItem('Lele goreng',9000)">+</button></div>
+<div class="menu-item"><span>Lele bakar - 9.000</span><button onclick="addItem('Lele bakar',9000)">+</button></div>
+<div class="menu-item"><span>Ayam penyet - 10.000</span><button onclick="addItem('Ayam penyet',10000)">+</button></div>
+<div class="menu-item"><span>Ayam geprek - 9.000</span><button onclick="addItem('Ayam geprek',9000)">+</button></div>
+
 </div>
 
-<div class="menu-item">
-<span>Ayam bakar - 10.000</span>
-<button onclick="addItem('Ayam bakar',10000)">+</button>
+
+<div class="section">
+<h2>MENU SOTO & SOP</h2>
+
+<div class="menu-item"><span>Soto babad tauco/bening - 10 RB</span><button onclick="addItem('Soto babad tauco/bening',10000)">+</button></div>
+<div class="menu-item"><span>Soto tauco ayam tauco/ bening - 10 RB</span><button onclick="addItem('Soto tauco ayam tauco/ bening',10000)">+</button></div>
+<div class="menu-item"><span>Soto campur - 13 RB</span><button onclick="addItem('Soto campur',13000)">+</button></div>
+<div class="menu-item"><span>SOP iga sapi - 20 RB</span><button onclick="addItem('SOP iga sapi',20000)">+</button></div>
+
 </div>
 
-<div class="menu-item">
-<span>Lele goreng - 9.000</span>
-<button onclick="addItem('Lele goreng',9000)">+</button>
+
+<div class="section">
+<h2>MINUMAN</h2>
+
+<div class="menu-item"><span>teh / hangat - 3 RB</span><button onclick="addItem('teh / hangat',3000)">+</button></div>
+<div class="menu-item"><span>jeruk / hangat - 4 RB</span><button onclick="addItem('jeruk / hangat',4000)">+</button></div>
+<div class="menu-item"><span>kopi hitam - 4 RB</span><button onclick="addItem('kopi hitam',4000)">+</button></div>
+<div class="menu-item"><span>white coffee - 4 RB</span><button onclick="addItem('white coffee',4000)">+</button></div>
+<div class="menu-item"><span>coffemix - 4 RB</span><button onclick="addItem('coffemix',4000)">+</button></div>
+<div class="menu-item"><span>susu putih/coklat - 4 RB</span><button onclick="addItem('susu putih/coklat',4000)">+</button></div>
+
 </div>
 
-<div class="menu-item">
-<span>Lele bakar - 9.000</span>
-<button onclick="addItem('Lele bakar',9000)">+</button>
-</div>
 
-<div class="menu-item">
-<span>Ayam penyet - 10.000</span>
-<button onclick="addItem('Ayam penyet',10000)">+</button>
-</div>
+<div class="section">
+<h2>MENU TAMBAHAN</h2>
 
-<div class="menu-item">
-<span>Ayam geprek - 9.000</span>
-<button onclick="addItem('Ayam geprek',9000)">+</button>
-</div>
+<div class="menu-item"><span>Tumis kangkung/tauge - 5 RB</span><button onclick="addItem('Tumis kangkung/tauge',5000)">+</button></div>
+<div class="menu-item"><span>Tempe/tahu goreng - 2 RB</span><button onclick="addItem('Tempe/tahu goreng',2000)">+</button></div>
+<div class="menu-item"><span>Mendoan - 10 RB</span><button onclick="addItem('Mendoan',10000)">+</button></div>
+<div class="menu-item"><span>Tahu/ tempe penyet - 5 RB</span><button onclick="addItem('Tahu/ tempe penyet',5000)">+</button></div>
 
 </div>
 
 
 <div class="cart">
 
-<b>Keranjang</b>
+<b>Keranjang Pesanan</b>
 
 <div id="cartList"></div>
 
@@ -169,7 +193,6 @@ renderCart()
 function renderCart(){
 
 let list=document.getElementById("cartList")
-
 let total=0
 
 list.innerHTML=""
@@ -177,7 +200,6 @@ list.innerHTML=""
 for(let item in cart){
 
 let data=cart[item]
-
 let subtotal=data.qty*data.price
 
 total+=subtotal
