@@ -3,27 +3,30 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rumah Makan H. Imam</title>
+<title>Menu Rumah Makan H. Imam</title>
 
 <style>
+
 body{
-font-family: Arial, sans-serif;
+font-family:Arial;
+margin:0;
 background:#0b3d6e;
 color:white;
-margin:0;
-padding:20px;
+padding-bottom:120px;
 }
 
-h1{
+header{
 text-align:center;
-margin-bottom:30px;
+padding:20px;
+font-size:24px;
+font-weight:bold;
 }
 
-.menu-section{
-margin-bottom:30px;
+.section{
+padding:15px;
 }
 
-.menu-section h2{
+.section h2{
 color:#ffd27a;
 border-bottom:2px solid #ffd27a;
 padding-bottom:5px;
@@ -32,187 +35,187 @@ padding-bottom:5px;
 .menu-item{
 display:flex;
 justify-content:space-between;
-padding:10px;
-margin:5px 0;
+align-items:center;
 background:#134c86;
+padding:10px;
+margin:6px 0;
 border-radius:8px;
+}
+
+button{
+background:#ffd27a;
+border:none;
+padding:6px 10px;
+border-radius:5px;
 cursor:pointer;
-transition:0.2s;
-}
-
-.menu-item:hover{
-background:#1d63a8;
-}
-
-.price{
 font-weight:bold;
 }
-</style>
 
-<script>
-function order(menu){
-let nomor = "62895339847320";
-let pesan = encodeURIComponent(menu);
-window.open(`https://wa.me/${nomor}?text=${pesan}`,"_blank");
+.cart{
+position:fixed;
+bottom:0;
+left:0;
+right:0;
+background:white;
+color:black;
+padding:15px;
+box-shadow:0 -3px 10px rgba(0,0,0,0.2);
 }
-</script>
+
+.cart-item{
+display:flex;
+justify-content:space-between;
+margin:5px 0;
+}
+
+.qty-btn{
+padding:2px 8px;
+margin:0 3px;
+}
+
+.order-btn{
+width:100%;
+margin-top:10px;
+background:green;
+color:white;
+padding:10px;
+font-size:16px;
+}
+
+</style>
 
 </head>
 
 <body>
 
-<h1>RUMAH MAKAN H. IMAM</h1>
+<header>RUMAH MAKAN H. IMAM</header>
 
-<div class="menu-section">
-<h2>MENU KAMBING</h2>
-
-<div class="menu-item" onclick="order('Sate kambing')">
-<span>Sate kambing</span>
-<span class="price">90.000</span>
-</div>
-
-<div class="menu-item" onclick="order('Tongseng kambing')">
-<span>Tongseng kambing</span>
-<span class="price">15.000</span>
-</div>
-
-<div class="menu-item" onclick="order('Gulai kambing')">
-<span>Gulai kambing</span>
-<span class="price">15.000</span>
-</div>
-
-<div class="menu-item" onclick="order('SOP kambing')">
-<span>SOP kambing</span>
-<span class="price">15.000</span>
-</div>
-
-<div class="menu-item" onclick="order('Gule kaki kambing')">
-<span>Gule kaki kambing</span>
-<span class="price">20.000</span>
-</div>
-</div>
-
-
-<div class="menu-section">
+<div class="section">
 <h2>MENU AYAM & LELE</h2>
 
-<div class="menu-item" onclick="order('Ayam goreng')">
-<span>Ayam goreng</span>
-<span class="price">10.000</span>
+<div class="menu-item">
+<span>Ayam goreng - 10.000</span>
+<button onclick="addItem('Ayam goreng',10000)">+</button>
 </div>
 
-<div class="menu-item" onclick="order('Ayam bakar')">
-<span>Ayam bakar</span>
-<span class="price">10.000</span>
+<div class="menu-item">
+<span>Ayam bakar - 10.000</span>
+<button onclick="addItem('Ayam bakar',10000)">+</button>
 </div>
 
-<div class="menu-item" onclick="order('Lele goreng')">
-<span>Lele goreng</span>
-<span class="price">9.000</span>
+<div class="menu-item">
+<span>Lele goreng - 9.000</span>
+<button onclick="addItem('Lele goreng',9000)">+</button>
 </div>
 
-<div class="menu-item" onclick="order('Lele bakar')">
-<span>Lele bakar</span>
-<span class="price">9.000</span>
+<div class="menu-item">
+<span>Lele bakar - 9.000</span>
+<button onclick="addItem('Lele bakar',9000)">+</button>
 </div>
 
-<div class="menu-item" onclick="order('Ayam penyet')">
-<span>Ayam penyet</span>
-<span class="price">10.000</span>
+<div class="menu-item">
+<span>Ayam penyet - 10.000</span>
+<button onclick="addItem('Ayam penyet',10000)">+</button>
 </div>
 
-<div class="menu-item" onclick="order('Ayam geprek')">
-<span>Ayam geprek</span>
-<span class="price">9.000</span>
-</div>
-</div>
-
-
-<div class="menu-section">
-<h2>MENU SOTO & SOP</h2>
-
-<div class="menu-item" onclick="order('Soto babad tauco/bening')">
-<span>Soto babad tauco/bening</span>
-<span class="price">10 RB</span>
-</div>
-
-<div class="menu-item" onclick="order('Soto tauco ayam tauco/ bening')">
-<span>Soto tauco ayam tauco/ bening</span>
-<span class="price">10 RB</span>
-</div>
-
-<div class="menu-item" onclick="order('Soto campur')">
-<span>Soto campur</span>
-<span class="price">13 RB</span>
-</div>
-
-<div class="menu-item" onclick="order('SOP iga sapi')">
-<span>SOP iga sapi</span>
-<span class="price">20 RB</span>
-</div>
-</div>
-
-
-<div class="menu-section">
-<h2>MINUMAN</h2>
-
-<div class="menu-item" onclick="order('teh / hangat')">
-<span>teh / hangat</span>
-<span class="price">3 RB</span>
-</div>
-
-<div class="menu-item" onclick="order('jeruk / hangat')">
-<span>jeruk / hangat</span>
-<span class="price">4 RB</span>
-</div>
-
-<div class="menu-item" onclick="order('kopi hitam')">
-<span>kopi hitam</span>
-<span class="price">4 RB</span>
-</div>
-
-<div class="menu-item" onclick="order('white coffee')">
-<span>white coffee</span>
-<span class="price">4 RB</span>
-</div>
-
-<div class="menu-item" onclick="order('coffemix')">
-<span>coffemix</span>
-<span class="price">4 RB</span>
-</div>
-
-<div class="menu-item" onclick="order('susu putih/coklat')">
-<span>susu putih/coklat</span>
-<span class="price">4 RB</span>
+<div class="menu-item">
+<span>Ayam geprek - 9.000</span>
+<button onclick="addItem('Ayam geprek',9000)">+</button>
 </div>
 
 </div>
 
 
-<div class="menu-section">
-<h2>MENU TAMBAHAN</h2>
+<div class="cart">
 
-<div class="menu-item" onclick="order('Tumis kangkung/tauge')">
-<span>Tumis kangkung/tauge</span>
-<span class="price">5 RB</span>
-</div>
+<b>Keranjang</b>
 
-<div class="menu-item" onclick="order('Tempe/tahu goreng')">
-<span>Tempe/tahu goreng</span>
-<span class="price">2 RB</span>
-</div>
+<div id="cartList"></div>
 
-<div class="menu-item" onclick="order('Mendoan')">
-<span>Mendoan</span>
-<span class="price">10 RB</span>
-</div>
+<div id="total"></div>
 
-<div class="menu-item" onclick="order('Tahu/ tempe penyet')">
-<span>Tahu/ tempe penyet</span>
-<span class="price">5 RB</span>
-</div>
+<button class="order-btn" onclick="sendWA()">Pesan via WhatsApp</button>
 
 </div>
+
+<script>
+
+let cart={}
+
+function addItem(name,price){
+
+if(!cart[name]){
+cart[name]={qty:0,price:price}
+}
+
+cart[name].qty++
+
+renderCart()
+
+}
+
+function changeQty(name,val){
+
+cart[name].qty+=val
+
+if(cart[name].qty<=0){
+delete cart[name]
+}
+
+renderCart()
+
+}
+
+function renderCart(){
+
+let list=document.getElementById("cartList")
+
+let total=0
+
+list.innerHTML=""
+
+for(let item in cart){
+
+let data=cart[item]
+
+let subtotal=data.qty*data.price
+
+total+=subtotal
+
+list.innerHTML+=`
+<div class="cart-item">
+<span>${item}</span>
+<div>
+<button class="qty-btn" onclick="changeQty('${item}',-1)">-</button>
+${data.qty}
+<button class="qty-btn" onclick="changeQty('${item}',1)">+</button>
+</div>
+</div>
+`
+
+}
+
+document.getElementById("total").innerHTML="<b>Total: Rp "+total+"</b>"
+
+}
+
+function sendWA(){
+
+let text="Pesanan:%0A"
+
+for(let item in cart){
+
+text+=item+" x"+cart[item].qty+"%0A"
+
+}
+
+let url="https://wa.me/62895339847320?text="+text
+
+window.open(url)
+
+}
+
+</script>
 
 </body>
-  </html>
+</html>
