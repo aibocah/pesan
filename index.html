@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rumah Makan H. Imam</title>
+
+<style>
+body{
+font-family: Arial, sans-serif;
+background:#0b3d6e;
+color:white;
+margin:0;
+padding:20px;
+}
+
+h1{
+text-align:center;
+margin-bottom:30px;
+}
+
+.menu-section{
+margin-bottom:30px;
+}
+
+.menu-section h2{
+color:#ffd27a;
+border-bottom:2px solid #ffd27a;
+padding-bottom:5px;
+}
+
+.menu-item{
+display:flex;
+justify-content:space-between;
+padding:10px;
+margin:5px 0;
+background:#134c86;
+border-radius:8px;
+cursor:pointer;
+transition:0.2s;
+}
+
+.menu-item:hover{
+background:#1d63a8;
+}
+
+.price{
+font-weight:bold;
+}
+</style>
+
+<script>
+function order(menu){
+let nomor = "62895339847320";
+let pesan = encodeURIComponent(menu);
+window.open(`https://wa.me/${nomor}?text=${pesan}`,"_blank");
+}
+</script>
+
+</head>
+
+<body>
+
+<h1>RUMAH MAKAN H. IMAM</h1>
+
+<div class="menu-section">
+<h2>MENU KAMBING</h2>
+
+<div class="menu-item" onclick="order('Sate kambing')">
+<span>Sate kambing</span>
+<span class="price">90.000</span>
+</div>
+
+<div class="menu-item" onclick="order('Tongseng kambing')">
+<span>Tongseng kambing</span>
+<span class="price">15.000</span>
+</div>
+
+<div class="menu-item" onclick="order('Gulai kambing')">
+<span>Gulai kambing</span>
+<span class="price">15.000</span>
+</div>
+
+<div class="menu-item" onclick="order('SOP kambing')">
+<span>SOP kambing</span>
+<span class="price">15.000</span>
+</div>
+
+<div class="menu-item" onclick="order('Gule kaki kambing')">
+<span>Gule kaki kambing</span>
+<span class="price">20.000</span>
+</div>
+</div>
+
+
+<div class="menu-section">
+<h2>MENU AYAM & LELE</h2>
+
+<div class="menu-item" onclick="order('Ayam goreng')">
+<span>Ayam goreng</span>
+<span class="price">10.000</span>
+</div>
+
+<div class="menu-item" onclick="order('Ayam bakar')">
+<span>Ayam bakar</span>
+<span class="price">10.000</span>
+</div>
+
+<div class="menu-item" onclick="order('Lele goreng')">
+<span>Lele goreng</span>
+<span class="price">9.000</span>
+</div>
+
+<div class="menu-item" onclick="order('Lele bakar')">
+<span>Lele bakar</span>
+<span class="price">9.000</span>
+</div>
+
+<div class="menu-item" onclick="order('Ayam penyet')">
+<span>Ayam penyet</span>
+<span class="price">10.000</span>
+</div>
+
+<div class="menu-item" onclick="order('Ayam geprek')">
+<span>Ayam geprek</span>
+<span class="price">9.000</span>
+</div>
+</div>
+
+
+<div class="menu-section">
+<h2>MENU SOTO & SOP</h2>
+
+<div class="menu-item" onclick="order('Soto babad tauco/bening')">
+<span>Soto babad tauco/bening</span>
+<span class="price">10 RB</span>
+</div>
+
+<div class="menu-item" onclick="order('Soto tauco ayam tauco/ bening')">
+<span>Soto tauco ayam tauco/ bening</span>
+<span class="price">10 RB</span>
+</div>
+
+<div class="menu-item" onclick="order('Soto campur')">
+<span>Soto campur</span>
+<span class="price">13 RB</span>
+</div>
+
+<div class="menu-item" onclick="order('SOP iga sapi')">
+<span>SOP iga sapi</span>
+<span class="price">20 RB</span>
+</div>
+</div>
+
+
+<div class="menu-section">
+<h2>MINUMAN</h2>
+
+<div class="menu-item" onclick="order('teh / hangat')">
+<span>teh / hangat</span>
+<span class="price">3 RB</span>
+</div>
+
+<div class="menu-item" onclick="order('jeruk / hangat')">
+<span>jeruk / hangat</span>
+<span class="price">4 RB</span>
+</div>
+
+<div class="menu-item" onclick="order('kopi hitam')">
+<span>kopi hitam</span>
+<span class="price">4 RB</span>
+</div>
+
+<div class="menu-item" onclick="order('white coffee')">
+<span>white coffee</span>
+<span class="price">4 RB</span>
+</div>
+
+<div class="menu-item" onclick="order('coffemix')">
+<span>coffemix</span>
+<span class="price">4 RB</span>
+</div>
+
+<div class="menu-item" onclick="order('susu putih/coklat')">
+<span>susu putih/coklat</span>
+<span class="price">4 RB</span>
+</div>
+
+</div>
+
+
+<div class="menu-section">
+<h2>MENU TAMBAHAN</h2>
+
+<div class="menu-item" onclick="order('Tumis kangkung/tauge')">
+<span>Tumis kangkung/tauge</span>
+<span class="price">5 RB</span>
+</div>
+
+<div class="menu-item" onclick="order('Tempe/tahu goreng')">
+<span>Tempe/tahu goreng</span>
+<span class="price">2 RB</span>
+</div>
+
+<div class="menu-item" onclick="order('Mendoan')">
+<span>Mendoan</span>
+<span class="price">10 RB</span>
+</div>
+
+<div class="menu-item" onclick="order('Tahu/ tempe penyet')">
+<span>Tahu/ tempe penyet</span>
+<span class="price">5 RB</span>
+</div>
+
+</div>
+
+</body>
+  </html>
